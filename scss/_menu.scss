@@ -106,17 +106,24 @@
             //slide in from right
             transform: translate3d(0,0,0);
         }
+        &.current > a{
+            color:$secondary-color;
+        }
     }
 
     .nav-link{
         display: inline-block ;
         position: relative;
         text-transform: uppercase ;
+        font-size: 30px;
         padding:  1rem 0 ;
         font-weight: 300;
         color:#fff ;
         text-decoration: none ;
         @include easeOut ;
+        &:hover{
+            color: $secondary-color;
+        }
     }
 }
 
